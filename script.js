@@ -17,7 +17,7 @@ if (Palindromo (insertWord)) {
     console.log("La parola non è un palindromo")
 }
 
-
+const insertWordResult = Palindromo(insertWord)
 
 
 
@@ -65,11 +65,40 @@ function giocoPariDispari () {
 
     console.log(result);
 
+    /*
     if (result === userChoice) {
         console.log("Hai vinto!");
     } else {
         console.log("Hai perso.");
     }
+    */
+
+    //Ma se io volessi combinare i due e far si che se la parola è palindromo e la user choice azzeccata allora lo user ha vinto?
+    if (insertWordResult && result === userChoice) {
+        console.log("Hai vinto! La parola è palindroma e la scelta è corretta")
+    } else if (insertWordResult) {
+        console.log("Perdi perché la parola è sì palindroma ma la scelta è sbagliata")
+    } else if (result === userChoice) {
+        console.log("Perdi perché hai sbagliato la scelta anche se la parola è palindroma")
+    } else {
+        console.log("Perdi e basta vez")
+    }
+
+
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 giocoPariDispari ();
+
