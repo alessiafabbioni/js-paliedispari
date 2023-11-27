@@ -21,6 +21,7 @@ const insertWordResult = Palindromo(insertWord)
 
 
 
+
 /*Pari e Dispari
 L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
