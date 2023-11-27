@@ -43,4 +43,21 @@ function Pari (number) {
 }
 
 
+//creiamo funzione per giocare al gioco
 
+function giocoPariDispari () {
+    const userChoice = prompt ("Scegli pari o dispari")
+    const userNumber = parseInt(prompt("Inserisci un numero da 1 a 5"));
+    const computerNumber = getRandomNumber();
+
+    const somma = userNumber + computerNumber;
+
+    let risultato;
+    if (Pari(somma)) {
+        result = 'pari';
+    } else {
+        result = 'dispari';
+    }
+}
+
+console.log(La somma è ${somma} quindi il risultato è ${result})
