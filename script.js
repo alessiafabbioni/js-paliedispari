@@ -18,12 +18,28 @@ if (Palindromo (insertWord)) {
 }
 
 
+
+
+
+/*Pari e Dispari
+L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
+Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
+Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione) 
+Dichiariamo chi ha vinto.
+*/
+
 // Funzione per inserimento di pari e dispari 
 
 //Genera numero random
 
 function getRandomNumber() {
     return Math.floor(Math.random() * 5) + 1;
+}
+
+//verfica se la somma dei numeri è pari o dispari
+
+function Pari (number) {
+    return number % 2 === 0;
 }
 
 
