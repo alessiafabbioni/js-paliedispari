@@ -11,7 +11,7 @@ function Palindromo (word) {
 
 //inserimento delle variabili
 const insertWord = prompt ("Inserisci una parola")
-if (Palindromo) {
+if (Palindromo (insertWord)) {
     console.log("La parola è un palindromo");
 } else {
     console.log("La parola non è un palindromo")
