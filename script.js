@@ -64,6 +64,12 @@ function giocoPariDispari () {
     }
 
     console.log(result);
+
+    if (result === userChoice) {
+        console.log("Hai vinto!");
+    } else {
+        console.log("Hai perso.");
+    }
 }
 
 giocoPariDispari ();
