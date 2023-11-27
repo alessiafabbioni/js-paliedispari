@@ -17,3 +17,14 @@ if (Palindromo (insertWord)) {
     console.log("La parola non è un palindromo")
 }
 
+
+// Funzione per inserimento di pari e dispari 
+
+//Genera numero random
+
+function getRandomNumber() {
+    return Math.floor(Math.random() * 5) + 1;
+}
+
+
+
